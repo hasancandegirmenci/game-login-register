@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/game-icon.png" type="image/x-icon"> <!-- fav icon  -->
+
+    
+    <title>Game Login</title>
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html"><img src="images/game-icon.png" alt="logo"></a>
+            </div>
+            <ul>
+                <li><a id="home" href="index.php">Home</a></li>
+                <li><a id="t-login" href="login.php">Login</a></li>
+                <li><a href="register.php">Register</a></li>
+            </ul>
+            <div class="logout">
+                
+                <button>LogOut </button>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+
+        <div class="game-left">
+            <h1>Login</h1>
+            <div class="login">
+
+                <form action="login.php" method="POST">
+                    <input type="text" name="username" placeholder="Username">
+
+                    <input type="password" name="password" placeholder="Password">
+                    <div class="check-boxx">
+                        <label for="hatırla">Remember me</label>
+                        <input style="margin-top:3px;" ; type="checkbox" name="Remember me">
+                    </div>
+                    <button type="submit" name="login_user">Login</button>
+
+                    <p>Don't have an account? <a href="register.php">Register</a></p>
+                </form>
+
+            </div>
+        </div>
+
+        <div class="game-right">
+
+            <div class="register">
+
+                <h1><span>R</span> egister</h1>
+                <form action="register.php" method="POST">
+                    <input type="text" name="Name" placeholder="Name">
+                    <input type="text" name="Surname" placeholder="Surname">
+                    <input type="text" name="username" placeholder="Username">
+                    <input type="email" name="email" placeholder="Email">
+                    <input type="password" name="password_1" placeholder="Password">
+                    <input type="password" name="password_2" placeholder="Confirm Password">
+                    <div class="gender">
+                    <label for="gender"><span>Gender<span><label>
+                    <input type="radio" name="gender" value="Male">Male
+                    <input type="radio" name="gender" value="Female">Female
+                    </div>
+                    <button type="submit" name="register">Register</button>
+                    <button id="reset" type="reset" name="reset"> Reset</button>
+                    <p>Already have an account? <a href="login.php">Login</a></p>
+                </form>
+
+            </div>
+
+        </div>
+    </div>
+    
+
+</body>
+
+</html>

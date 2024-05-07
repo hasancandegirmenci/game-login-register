@@ -1,0 +1,387 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+* body {
+    background-image: url(images/oyun-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+    width: 95%;
+}
+
+header {
+    align-items: center;
+    justify-content: space-between;
+    transition: all .50s ease;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    margin-top: 25px;
+    margin-left: 5px;
+}
+
+nav {
+    margin: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100;
+    height: 100px;
+}
+
+#home {
+    display: flex;
+    margin-left: -350px;
+    width: 65px;
+    padding: 5px;
+    color: rgb(41, 160, 136);
+}
+
+#home:hover {
+    color: rgb(250, 251, 252);
+}
+
+.logout button:first-letter {
+    color: white;
+    text-shadow: 0 0 5px rgb(247, 243, 241);
+}
+
+nav ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    margin: 0 10px;
+    padding: 0;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+nav a {
+    display: inline-flex;
+    text-decoration: none;
+    color: rgb(10, 61, 51);
+    margin-left: 85px;
+    transition: all .6s ease;
+    font-weight: bold;
+    font: 45px;
+}
+
+nav a:hover {
+
+    color: rgb(250, 251, 252);
+    transform: translateY(-6px);
+}
+
+.logout {
+    width: 300px;
+    height: 40px;
+    margin-top: 10px;
+    margin-right: -95px;
+    border: transparent;
+}
+
+.logout button {
+    border-radius: 15px 0px 15px 0px;
+    height: 35px;
+    width: 105px;
+    font-size: 20px;
+    font-weight: 900;
+    background: transparent;
+    color: rgb(10, 61, 51);
+    border: none;
+    cursor: pointer;
+    background-color: brown;
+}
+
+.logout button:hover {
+    color: rgb(243, 241, 241);
+    transition: 0.5s;
+    box-shadow: 0 0 15px rgb(221, 217, 217);
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* login start */
+.game-left {
+    box-sizing: border-box;
+    display: flex;
+    text-align: left;
+    border-radius: 20px;
+    width: 320px;
+    height: 430px;
+    margin-top: 20px;
+    margin-left: 50px;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 0 15px rgb(221, 217, 217);
+}
+
+.game-left h1 {
+    font-size: 60px;
+    font-weight: bold;
+    width: 300px;
+    height: 80px;
+    margin-left: 0px;
+    margin-top: px;
+    color: rgb(91, 107, 136);
+    background-color: rgb(10, 61, 51);
+    border-radius: 20px 0px 30px 0px;
+    box-shadow: 0 0 15px rgb(10, 61, 51);
+}
+
+.game-left h1::first-letter {
+    color: white;
+    text-shadow: 0 0 5px rgb(247, 243, 241);
+}
+
+.login {
+    display: flex;
+    text-align: left;
+    margin-top: 110px;
+    margin-left: -135px;
+    align-items: flex-start;
+}
+
+.login input {
+    border-radius: 5px;
+    height: 45px;
+    width: 280px;
+    font-size: 19px;
+    color: rgb(1, 17, 36);
+    border: none;
+    background: transparent;
+    outline: none;
+    margin-left: 0px;
+    margin-top: 10px;
+    border-bottom: 2px solid wheat;
+}
+
+.login input:hover {
+    border-bottom: 2px solid rgb(10, 61, 51);
+    transition: 0.5s ease;
+}
+
+.login button {
+    height: 40px;
+    width: 180px;
+    font-size: 30px;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    margin-left: 45px;
+    margin-top: 50px;
+    color: rgb(91, 107, 136);
+    background: transparent;
+    cursor: pointer;
+    transition: 0.5s;
+    box-shadow: 0 0 15px rgb(221, 217, 217);
+}
+
+.login button:hover {
+    box-shadow: 0 0 15px rgb(10, 61, 51);
+    color: wheat;
+    background-color: rgb(10, 61, 51);
+}
+
+.login p {
+    color: rgb(91, 107, 136);
+    font-size: 17px;
+    font-style: italic;
+    margin-top: 20px;
+}
+
+.login p:hover {
+    color: rgb(248, 246, 246);
+    cursor: default
+}
+
+.login a {
+    text-decoration: none;
+    margin-left: 15px;
+    color: rgb(21, 89, 214);
+    font-size: 17px;
+    font-style: italic;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.login a:hover {
+    color: rgb(133, 13, 13);
+    font-size: large;
+    transition: 0.5s;
+}
+
+.check-boxx {
+    display: flex;
+    text-align: left;
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 19px;
+    color: rgb(91, 107, 136);
+}
+
+.check-boxx input {
+    display: flex;
+    width: 15px;
+    height: 15px;
+    margin-left: 10px;
+    cursor: pointer;
+    text-align: center;
+}
+
+/* login End */
+
+/* Register Start */
+
+.game-right {
+    display: flex;
+    text-align: left;
+    margin-right: 35px;
+    border-radius: 20px;
+    width: 370px;
+    height: 630px;
+    margin-top: 140px;
+    margin-left: 1150px;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 0 15px rgb(221, 217, 217);
+}
+
+.game-right h1 {
+    font-size: 60px;
+    font-weight: bold;
+    width: 225px;
+    height: 80px;
+    display: flex;
+    text-align: right;
+    margin-top: px;
+    color: rgb(91, 107, 136);
+    background-color: rgb(10, 61, 51);
+    border-radius: 20px 0px 30px 0px;
+    box-shadow: 0 0 15px rgb(10, 61, 51);
+}
+
+.game-right span {
+    color: wheat;
+    text-shadow: 0 0 5px rgb(247, 243, 241);
+}
+
+.game-right input {
+    display: flex;
+    width: 340px;
+    height: 30px;
+    margin-left: 10px;
+    margin-top: 25px;
+    cursor: pointer;
+    text-align: left;
+    border: none;
+    border-bottom: 2px solid wheat;
+    background: transparent;
+    outline: none;
+    cursor: text;
+    font-size: 19px;
+    color: rgb(91, 107, 136);
+}
+
+.game-right input:hover {
+    border-bottom: 2px solid rgb(10, 61, 51);
+    transition: 0.5s;
+}
+
+.gender {
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 10px;
+    cursor: pointer;
+    color: rgb(91, 107, 136);
+}
+
+.gender span {
+    color: rgb(22, 22, 22);
+}
+
+.gender input {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 12px;
+    height: 12px;
+    margin-left: 35px;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.register button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    font-weight: bold;
+    color: rgb(91, 107, 136);
+    width: 145px;
+    height: 40px;
+    margin-left: 25px;
+    margin-top: 45px;
+    background: transparent;
+    border: none;
+    box-shadow: 0 0 15px rgb(221, 217, 217);
+    border-radius: 5px;
+}
+
+.register button:hover {
+    box-shadow: 0 0 15px rgb(10, 61, 51);
+    color: wheat;
+    background-color: rgb(10, 61, 51);
+}
+
+#reset:hover {
+    box-shadow: 0 0 15px rgb(133, 13, 13);
+    color: wheat;
+    background-color: rgb(133, 13, 13);
+}
+
+.register p {
+    font-size: 18px;
+    font-style: italic;
+    font-weight: bold;
+    margin-left: 15px;
+    margin-top: 25px;
+    color: rgb(91, 107, 136);
+}
+
+.register a {
+    text-decoration: none;
+    margin-left: 15px;
+    color: rgb(21, 89, 214);
+    font-size: 17px;
+    font-style: italic;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.register p:hover {
+    color: rgb(248, 246, 246);
+    font-size: large;
+    transition: 0.5s;
+    cursor: default
+}
+
+.register a:hover {
+    color: rgb(133, 13, 13);
+    font-size: large;
+    transition: 0.5s;
+}
+
+/* Register End */
